@@ -7,12 +7,13 @@ export default function Home() {
   const { homeInitialValues } = useHomeInitialValues();
   return (
     <Formik
+      enableReinitialize
       initialValues={homeInitialValues}
       onSubmit={(values) => {
         console.log(values);
       }}
     >
-      {({ handleSubmit }) => (
+      {({ handleSubmit, errors, touched }) => (
         <div className="font-sans flex flex-col  min-h-screen p-8 gap-2  ">
           <h1>Un Ejemplo de FORMIK & YUP</h1>
           <HomeForm />
