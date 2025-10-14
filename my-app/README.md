@@ -1,6 +1,6 @@
 # Bienvenidos a la explicación de Formik 🚀
 
-![Intro](./src/assets/intro.png)
+![Intro](./src/app/assets/intro.png)
 
 Formik es una librería de control de formularios HTML muy popular al día de hoy, con **5.8 millones de descargas**.
 
@@ -11,7 +11,7 @@ Es muy sencillo su uso cuando conocemos las 4 o 5 cosas que se utilizan en el d�
 Lo primero será envolver nuestro formulario con el componente **Formik**.  
 Normalmente con eso bastaría, pero yo prefiero hacerlo en una medida más grande, porque normalmente vamos a necesitar data de ese formulario fuera del mismo —ya sea para disparar acciones o condiciones según el caso—, por eso prefiero envolver toda una ruta o página completa.
 
-![example1](./src/assets/example1.png)
+![example1](./src/app/assets/example1.png)
 
 ## 2. Initial Values
 
@@ -25,13 +25,13 @@ Los **initialValues** son los valores iniciales de nuestro formulario. Si es muy
 
 Si es un formulario que recibe datos por ejemplo mediante un ID, y este nos puede traer o no datos del formulario, es mejor llevar estos **initialValues** fuera para poderlos modificar más fácilmente y de manera modularizada.
 
-![example2](./src/assets/example_initialValues.png)
+![example2](./src/app/assets/example_initialValues.png)
 
 ### enableReinitialize
 
 > **NOTA:** Es importante que para que el formulario pueda cambiar sus valores iniciales debemos pasar la prop `enableReinitialize`
 
-![example3](./src/assets/example_enableReinitialize.png)
+![example3](./src/app/assets/example_enableReinitialize.png)
 
 ## 3. HandleSubmit
 
@@ -42,13 +42,13 @@ Normalmente la utilizo dentro del típico button submit del formulario, pero tam
 - Dispararlo automáticamente cuando todos los campos estén completos
 - Disparar el submit desde buttons que no están dentro del `<form>`, siempre y cuando esté envuelto en el Formik
 
-![example4](./src/assets/example_handleSubmit.png)
+![example4](./src/app/assets/example_handleSubmit.png)
 
 ## 4. useFormikContext
 
 Para usar todas las características del Formik, el componente debe estar envuelto dentro de un componente Formik, y eso nos lleva a otro punto importante: **useFormikContext**.
 
-![example5](./src/assets/example_useFormikContext.png)
+![example5](./src/app/assets/example_useFormikContext.png)
 
 Este hook va a consumir el `handleSubmit` o los `values` del Formik padre.
 
@@ -63,11 +63,11 @@ Con esta función podemos definir exactamente qué campo vamos a apuntar, rellen
 
 Pero de hecho podemos llenar varios campos a la vez, ejemplo:
 
-![example6](./src/assets/example_diferents_inputs.mov)
+![example6](./src/app/assets/example_diferents_inputs.mov)
 
 Podemos hacer que buttons actualicen el valor, tipo:
 
-![example7](./src/assets/example_numbers.mov)
+![example7](./src/app/assets/example_numbers.mov)
 
 Entonces `setFieldValue` nos da mucha flexibilidad y control sobre el formulario.
 
