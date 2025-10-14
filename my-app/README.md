@@ -63,11 +63,11 @@ Con esta función podemos definir exactamente qué campo vamos a apuntar, rellen
 
 Pero de hecho podemos llenar varios campos a la vez, ejemplo:
 
-<video src="./src/app/assets/example_diferents_inputs.mov" controls width="600"></video>
+![example6](./src/app/assets/example_diferents_inputs.gif)
 
 Podemos hacer que buttons actualicen el valor, tipo:
 
-<video src="./src/app/assets/example_numbers.mov" controls width="600"></video>
+![example7](./src/app/assets/example_numbers.gif)
 
 Entonces `setFieldValue` nos da mucha flexibilidad y control sobre el formulario.
 
