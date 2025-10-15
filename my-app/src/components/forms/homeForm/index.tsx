@@ -1,4 +1,4 @@
-import { HomeInitialValues } from "@/app/types/forms/homeInitialValues";
+import { HomeInitialValues } from "@/types/homeInitialValues";
 import { useFormikContext } from "formik";
 
 export const HomeForm = () => {

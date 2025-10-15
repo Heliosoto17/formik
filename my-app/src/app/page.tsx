@@ -1,7 +1,7 @@
 "use client";
+import { HomeForm } from "@/components/forms/homeForm";
+import { useHomeInitialValues } from "@/hooks/initialValues/useHomeInitialValues";
 import { Formik } from "formik";
-import { HomeForm } from "./components/forms/homeForm";
-import { useHomeInitialValues } from "./hooks/initialValues/useHomeInitialValues";
 
 export default function Home() {
   const { homeInitialValues } = useHomeInitialValues();
