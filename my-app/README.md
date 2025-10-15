@@ -2,20 +2,20 @@
 
 ![Intro](./src/app/assets/intro.png)
 
-Formik es una librería de control de formularios HTML muy popular al día de hoy, con **5.8 millones de descargas**.
+Formik es una librería de control de formularios HTML muy popular al día de hoy, con **3 millones de descargas**.
 
 Es muy sencillo su uso cuando conocemos las 4 o 5 cosas que se utilizan en el día a día, y lo veremos a continuación.
 
 ## 1. Envolviendo tu aplicación con Formik
 
 Lo primero será envolver nuestro formulario con el componente **Formik**.  
-Normalmente con eso bastaría, pero yo prefiero hacerlo en una medida más grande, porque normalmente vamos a necesitar data de ese formulario fuera del mismo —ya sea para disparar acciones o condiciones según el caso—, por eso prefiero envolver toda una ruta o página completa.
+Normalmente con eso bastaría, pero yo prefiero hacerlo en una medida más grande, porque casi siempre vamos a necesitar data de ese formulario fuera del mismo ya sea para disparar acciones o condiciones según el caso, por eso prefiero envolver toda una ruta o página completa.
 
 ![example1](./src/app/assets/example1.png)
 
 ## 2. Initial Values
 
-Dentro de este se definen varias cosas, así que comencemos con la más importante:
+Dentro de este se definen varias cosas, así que comencemos con las más importante:
 
 ```jsx
 initialValues={{name: "example"}}
@@ -46,15 +46,15 @@ Normalmente la utilizo dentro del típico button submit del formulario, pero tam
 
 ## 4. useFormikContext
 
-Para usar todas las características del Formik, el componente debe estar envuelto dentro de un componente Formik, y eso nos lleva a otro punto importante: **useFormikContext**.
+Para poder usar todas las características del Formik en otro componente, el mismo debe estar envuelto dentro de un componente Formik "padre", y eso nos lleva a otro punto importante: **useFormikContext**.
 
 ![example5](./src/app/assets/example_useFormikContext.png)
 
-Este hook va a consumir el `handleSubmit` o los `values` del Formik padre.
+Este hook esparce todas las propiedades de formik y va a consumir el `handleSubmit` o los `values` del Formik padre.
 
 ## 5. setFieldValue
 
-Por otro lado, podemos trabajar el formulario con los `onChange` de toda la vida, pero tiene una función que me gusta más: **setFieldValue**.
+Por otro lado, podemos trabajar los campos del formulario con los `onChange` de toda la vida, pero tiene una función que me gusta más: **setFieldValue**.
 
 Con esta función podemos definir exactamente qué campo vamos a apuntar, rellenar o modificar. Esta función recibe:
 
