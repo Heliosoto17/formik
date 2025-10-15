@@ -2,11 +2,11 @@
 
 ![Intro](./src/app/assets/intro.png)
 
-Formik es una librería de control de formularios HTML muy popular al día de hoy, con **3 millones de descargas**.
+Formik es una librería de control de formularios HTML muy popular al día de hoy, con **3 millones de descargas**. semanales.
 
 Es muy sencillo su uso cuando conocemos las 4 o 5 cosas que se utilizan en el día a día, y lo veremos a continuación.
 
-## 1. Envolviendo tu aplicación con Formik
+## 1. Envolviendo tu formulario con Formik
 
 Lo primero será envolver nuestro formulario con el componente **Formik**.  
 Normalmente con eso bastaría, pero yo prefiero hacerlo en una medida más grande, porque casi siempre vamos a necesitar data de ese formulario fuera del mismo ya sea para disparar acciones o condiciones según el caso, por eso prefiero envolver toda una ruta o página completa.
@@ -33,7 +33,7 @@ Si es un formulario que recibe datos por ejemplo mediante un ID, y este nos pued
 
 ![example3](./src/app/assets/example_enableReinitialize.png)
 
-## 3. HandleSubmit
+## 3. handleSubmit
 
 Por otro lado, para disparar el submit del formulario me gusta hacerlo a través de una función que nos ofrece el mismo Formik: **handleSubmit**.
 
@@ -112,3 +112,8 @@ Pero para mí es mejor hacer algo tipo el componente `<HomeForm>` de este reposi
 Espero que mi poca/mucha experiencia (según para quien lea este repositorio) sea de ayuda, y por supuesto estoy dispuesto a escuchar mejoras.
 
 He realizado muchísimos formularios siguiendo estos lineamientos y la verdad se vuelve sencillo y repetitivo una vez que los dominas.
+
+Tengo que agregar que hoy en día a pesar de ser muy utilizada react hook form está tomando la delantera.
+
+Muchas gracias:
+atte: Helio Soto
